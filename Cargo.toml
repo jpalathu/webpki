@@ -77,7 +77,7 @@ trust_anchor_util = ["std"]
 
 [dependencies]
 ring = { git = "https://github.com/briansmith/ring", default-features = false, features = [ "wasm32_unknown_unknown_js"] }
-untrusted = "0.7.1"
+untrusted = "0.9"
 
 [dev-dependencies]
 base64 = "0.13"
