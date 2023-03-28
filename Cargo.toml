@@ -76,7 +76,7 @@ std = ["alloc"]
 trust_anchor_util = ["std"]
 
 [dependencies]
-ring = { git = "https://github.com/1Password/ring", tag = "0.17.0-alpha.11.2", default-features = false }
+ring = { git = "https://github.com/briansmith/ring", default-features = false, features = [ "wasm32_unknown_unknown_js", "alloc"] }
 untrusted = "0.7.1"
 
 [dev-dependencies]
