@@ -76,8 +76,9 @@ std = ["alloc"]
 trust_anchor_util = ["std"]
 
 [dependencies]
-ring = { version = "0.17.0-alpha.11" }
-untrusted = "0.7.1"
+# XXX: This can be swapped with the next ring release
+ring = { git = "https://github.com/briansmith/ring", features = ["wasm32_unknown_unknown_js"] }
+untrusted = "0.9.0"
 
 [dev-dependencies]
 base64 = "0.13"
